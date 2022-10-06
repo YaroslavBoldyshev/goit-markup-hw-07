@@ -3,46 +3,47 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 1600px 600px;
-}
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    row-gap: 30px;
-}
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        row-gap: 30px;
+    }
 
-.hero__title {
-    @include font(44px, 900, 1.36);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white-color);
-    margin-left: auto;
-    margin-right: auto;
-    width: 696px;
-}
-.hero__order-button {
-    width: 216px;
-    height: 50px;
-    background: var(--brand-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    @include font(16px, 700, 1.87);
-    font-family: inherit;
-    font-style: normal;
-    text-align: center;
-    letter-spacing: 0.06em;
-    border: none;
-    color: var(--white-color);
-    transition: background-color var(--dur-and-func);
-    &:active,
-    &:hover,
-    &:focus {
+    &__title {
+        @include font(44px, 900, 1.36);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--white-color);
+        margin-left: auto;
+        margin-right: auto;
+        width: 696px;
+    }
+
+    &__order-button {
+        width: 216px;
+        height: 50px;
+        background: var(--brand-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        @include font(16px, 700, 1.87);
+        font-family: inherit;
+        font-style: normal;
+        text-align: center;
+        letter-spacing: 0.06em;
+        border: none;
+        color: var(--white-color);
+        transition: background-color var(--dur-and-func);
+
+        &:active,
+        &:hover,
+        &:focus {
             background-color: #188CE8;
             cursor: pointer;
         }
+    }
 }
-

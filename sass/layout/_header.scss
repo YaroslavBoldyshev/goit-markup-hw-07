@@ -1,10 +1,4 @@
-.header__logo {
-    font-family: Raleway;
-    @include font(26px, 700, 1.19);
-    text-decoration: none;
-    color: #000000;
-    letter-spacing: 0.03em;
-}
+
 
 .logo-blue {
     color: var(--brand-color);
@@ -12,66 +6,78 @@
 
 .header {
     background: #FFFFFF;
-}
 
-.header-container {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ECECEC;
-}
+    &-container {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ECECEC;
+    }
 
-.header__navigation {
-    display: flex;
-    align-items: center;
-    column-gap: 93px;
-}
+    &__logo {
+        font-family: Raleway;
+        @include font(26px, 700, 1.19);
+        text-decoration: none;
+        color: #000000;
+        letter-spacing: 0.03em;
+    }
 
-.header__nav-item{
-    text-decoration: none;
-    color: inherit;
-    text-decoration: none;
-    @include font(14px, 500, 1.14);
-    letter-spacing: 0.02em;
-    transition: color var(--dur-and-func);
-    &:active,
-    &:hover,
-    &:focus {
-            color: var(--brand-color);
-        }
-}
+    &__navigation {
+        display: flex;
+        align-items: center;
+        column-gap: 93px;
+    }
 
-.header__contacts {
-    display: flex;
-    column-gap: 50px;
-}
-
-.header__nav-list {
-    display: flex;
-    column-gap: 50px;
-}
-
-.header__contact-link {
-    display: inline-flex;
-    align-items: center;
-    column-gap: 10px;
-    color: var(--grey-text-color);
-    text-decoration: none;
-    @include font(14px, 500, 1.14);
-    letter-spacing: 0.02em;
-    transition: color var(--dur-and-func);
-    &:hover,
-    &:focus{
-        color: var(--brand-color);
+    &__nav-item{
+        text-decoration: none;
+        color: inherit;
+        text-decoration: none;
+        @include font(14px, 500, 1.14);
+        letter-spacing: 0.02em;
+        transition: color var(--dur-and-func);
+            &:active,
+            &:hover,
+            &:focus {
+                color: var(--brand-color);
             }
+    }
+
+    &__contacts {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    &__nav-list {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    &__contact-link {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 10px;
+        color: var(--grey-text-color);
+        text-decoration: none;
+        @include font(14px, 500, 1.14);
+        letter-spacing: 0.02em;
+        transition: color var(--dur-and-func);
+            &:hover,
+            &:focus{
+                color: var(--brand-color);
+            }
+    }
+
+    &__contact-link:hover svg {
+        fill: var(--brand-color);
+    }
+
+    &__contact-icon {
+        fill: #757575;
+        transition: fill var(--dur-and-func);
+    }
 }
 
-.header__contact-link:hover svg {
-    fill: var(--brand-color);
-}
 
-.header__contact-icon {
-    fill: #757575;
-    transition: fill var(--dur-and-func);
-}
+
+
