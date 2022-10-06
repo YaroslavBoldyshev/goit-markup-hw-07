@@ -14,7 +14,7 @@
     row-gap: 30px;
 }
 
-.hero-title {
+.hero__title {
     @include font(44px, 900, 1.36);
     text-align: center;
     letter-spacing: 0.06em;
@@ -24,7 +24,7 @@
     margin-right: auto;
     width: 696px;
 }
-.order-button {
+.hero__order-button {
     width: 216px;
     height: 50px;
     background: var(--brand-color);

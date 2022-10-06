@@ -3,17 +3,17 @@
     padding-bottom: 94px;
 }
 
-.galery-list {
+.galery {
     display: flex;
     column-gap: 30px;
     margin-top: 50px
 }
 
-.galery-list-item {
+.galery__item {
     position: relative;
 }
 
-.galery-list-item-text {
+.galery__item-text {
     @extend %align;
     height: 70px;
     position: relative;

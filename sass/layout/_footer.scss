@@ -2,7 +2,7 @@
     background-color: var(--dark-bg);
 }
 
-.footer-social-item {
+.fofooter__social-links-list-item {
     width: 44px;
     height: 44px;
     @extend %align;
@@ -15,7 +15,7 @@
         }
 }
 
-.footer-social-icon {
+.footer__social-links-list-icon {
     fill: var(--white-color)
 }
 
@@ -25,7 +25,7 @@
     display: flex;
 }
 
-.logo-footer {
+.footer__logo {
     font-family: Raleway;
     @include font(26px, 700, 1.19);
     text-decoration: none;
@@ -33,21 +33,21 @@
     letter-spacing: 0.03em;
 }
 
-.footer-list {
+.footer__contacts-list {
     display: flex;
     flex-direction: column;
     row-gap: 9px;
     margin-top: 20px;
 }
 
-.footer-social-links {
+.fofooter__social-links {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
     margin-top: 12px;
 }
 
-.footer-link {
+.footer__contacts-link {
     color: var(--white-color);
     text-decoration: none;
     @include font(14px, 400, 1.71);
@@ -60,33 +60,33 @@
         }
 }
 
-.footer-social-links-headline {
+.footer__headline {
     @include font(14px, 700, 1.14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.footer-social-list {
+.fofooter__social-links-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
     margin-top: 20px;
 }
 
-.subscribe-box {
+.footer__subscribe-box {
     margin-left: 93px;
     margin-top: 12px;
 }
 
-.subscribe-form {
+.footer__subscribe-form {
     display: flex;
     align-items: center;
     column-gap: 12px;
     margin-top: 20px;
 }
 
-.subscribe-input {
+.footer__subscribe-input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -96,7 +96,7 @@
     padding-left: 16px;
 }
 
-.subscribe-submit-btn {
+.footer__submit-btn {
     width: 200px;
     height: 50px;
     background: var(--brand-color);
@@ -109,6 +109,6 @@
     @extend %align;
 }
 
-.submit-send-icon {
+.footer__send-icon {
     margin-left: 10px;
 }

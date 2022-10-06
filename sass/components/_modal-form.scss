@@ -28,8 +28,7 @@
     &:focus {
             outline: none;
             border-color: var(--brand-color);
-        }
-        
+        } 
 }
 
 .modal-form-field-name {
@@ -79,11 +78,10 @@
     border-color var(--dur-and-func);
     margin-right: 8px;
     fill: #FFFFFF;
-}
-
-.modal-form-check:checked+.modal-form-own-check {
-    background-color: var(--brand-color);
-    border-color: var(--brand-color);
+    .modal-form-check:checked + & {
+            background-color: var(--brand-color);
+            border-color: var(--brand-color);
+        }
 }
 
 .modal-agreement {

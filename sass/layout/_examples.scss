@@ -6,14 +6,14 @@
     flex-direction: column;
 }
 
-.filter-buttons-list {
+.filter-buttons {
     margin: 0 auto;
     display: flex;
     column-gap: 8px;
 
 }
 
-.filter-buttons {
+.filter-buttons__item {
     background-color: #F5F4FA;
     color: inherit;
     font-family: inherit;
@@ -38,14 +38,14 @@
         }
 }
 
-.examples-list {
+.examples {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     padding-top: 50px;
 }
 
-.examples-list__item {
+.examples__item {
     transition: box-shadow var(--dur-and-func);
     &:hover,
     &:focus {
@@ -53,14 +53,14 @@
         }
 }
 
-.examples-list__picture-box {
+.examples__picture-box {
     position: relative;
     width: 370px;
     height: 294px;
     overflow: hidden;
 }
 
-.examples-list__tex-over-img {
+.examples__tex-over-img {
     @include font(18px, 400, 1.56);
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -71,24 +71,24 @@
     height: 294px;
     position: relative;
     transition: transform var(--dur-and-func);
-    .examples-list__item:hover &{
+    .examples__item :hover &{
             transform: translate(0, -100%);
         }
 }
 
-.examples-list__caption-box {
+.examples__caption-box {
     padding: 20px 24px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
 
-.examples-list__caption{
+.examples__caption{
     @include font(18px, 700, 2);
     letter-spacing: 0.06em;
 }
 
-.examples-list__details {
+.examples__details {
     @include font(16px, 400, 1.88);
     color: var(--grey-text-color);
 }
