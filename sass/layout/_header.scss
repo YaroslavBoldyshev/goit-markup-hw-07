@@ -1,0 +1,79 @@
+.logo {
+    font-family: Raleway;
+    @include font(26px, 700, 1.19);
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 0.03em;
+}
+
+.logo-blue {
+    color: var(--brand-color);
+}
+
+.header {
+    background: #FFFFFF;
+}
+
+.page-header-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 93px;
+}
+
+.nav {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    @include font(14px, 500, 1.14);
+    letter-spacing: 0.02em;
+    transition: color var(--dur-and-func);
+    &:active {
+            color: var(--brand-color);
+        }
+}
+
+.header-contacts {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-nav-list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--grey-text-color);
+    text-decoration: none;
+    @include font(14px, 500, 1.14);
+    letter-spacing: 0.02em;
+    transition: color var(--dur-and-func);
+}
+
+.header-link:hover svg {
+    fill: var(--brand-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.nav:hover,
+.nav:focus,
+.nav:active {
+    color: var(--brand-color);
+}
+
+.header-contact-icon {
+    fill: #757575;
+    transition: fill var(--dur-and-func);
+}

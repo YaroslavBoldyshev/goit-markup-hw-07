@@ -1,0 +1,36 @@
+.clients-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.clients__list {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+
+}
+
+.clients__list-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    @extend %align;
+    transition: border-color var(--dur-and-func);
+    &:hover,
+    &:focus {
+            border-color: var(--brand-color);
+        }
+}
+
+.clients__icon {
+    fill: #AFB1B8;
+    transition: fill var(--dur-and-func);
+    .clients__list-item:hover &,
+    .clients__list-item:focus & {
+            fill: var(--brand-color);
+        }
+}
